@@ -1,42 +1,32 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.smallFontSize {
+  font-size: 9px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.mediumFontSize {
+  font-size: 12.99px;
+}
+
+.containerWidthGlobalCSS {
+  max-width: 1525px;
+  margin: 0 auto;
+}
+
+.rightSidebarScrollContainer {
+  overflow-y: auto;
+  max-height: calc(100vh);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) transparent;
+}
+
+@media (max-width: 1600px) {
+  .containerWidthGlobalCSS {
+    max-width: 1435px;
+    margin: 0 auto;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (max-width: 1460px) {
+  .containerWidthGlobalCSS {
+    margin: 0 10px;
   }
 }

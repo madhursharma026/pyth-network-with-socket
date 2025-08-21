@@ -1,0 +1,34 @@
+.borderEndOnlySm {
+    border-right: none;
+}
+
+@media (min-width: 576px) {
+    .borderEndOnlySm {
+        border-right: 1px solid var(--border-color);
+    }
+}
+
+.rightColumn {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100dvh - 50px);
+    padding-bottom: 100px;
+    scrollbar-width: none;
+}
+
+.textColor {
+    color: var(--text-color);
+}
+
+.rightSidebarContainer {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.imgLightChart {
+    display: var(--displayImageLight);
+}
+
+.imgDarkChart {
+    display: var(--displayImageDark);
+}

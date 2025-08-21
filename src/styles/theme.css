@@ -1,0 +1,31 @@
+body.dark-mode {
+    background-color: #121212;
+    --border-color: #242424;
+    --text-color: hsl(0, 0%, 73%);
+    --bg-color: #181818;
+    --hover-color: #111111;
+    --displayImageDark: block;
+    --displayImageLight: none;
+    --displayToggleInDarkMode: inline;
+    --displayToggleInLightMode: none;
+    --buySellCardBg: #222222;
+    --buySellCardTabBg: #262626;
+    --inputBg: #313131;
+    --inputDisableBg: 45deg, #2c2c2c, #2c2c2c 10px, #1e1e1e 10px, #1e1e1e 20px;
+}
+
+body.light-mode {
+    background-color: #F8F8F8;
+    --border-color: #e6e6e6;
+    --text-color: #595C5F;
+    --bg-color: white;
+    --hover-color: rgb(214, 214, 214);
+    --displayImageDark: none;
+    --displayImageLight: block;
+    --displayToggleInDarkMode: none;
+    --displayToggleInLightMode: inline;
+    --buySellCardBg: #FFFFFF;
+    --buySellCardTabBg: #F5F5F5;
+    --inputBg: #FFFFFF;
+    --inputDisableBg: 45deg, #f2f2f2, #f2f2f2 10px, #e6e6e6 10px, #e6e6e6 20px
+}

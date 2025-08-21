@@ -1,0 +1,138 @@
+.leftColumnDisplay {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+@media (min-width: 1100px) {
+    .leftColumn {
+        max-width: 380px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .leftColumn {
+        max-width: 430px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .hoverBtn {
+        width: 30px;
+        cursor: pointer;
+        border-radius: 4px;
+        background: white;
+        color: #000;
+    }
+
+    .hoverBtnBuySell {
+        width: 30px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .hoverBtn:hover {
+        background: #e2e2e2;
+        color: #000;
+    }
+}
+
+.leftColumn {
+    border-right: 1px solid var(--border-color);
+}
+
+.scrollContainer {
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) transparent;
+    overflow-x: hidden;
+    border: 0px;
+}
+
+@media (max-width: 1125px) {
+    .leftColumnDisplay {
+        display: none;
+    }
+}
+
+.tableRow {
+    height: 32px;
+}
+
+.tableColumn {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.valueColumn {
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* Hover Swap */
+.hoverEffectColumnShow {
+    display: none !important;
+}
+
+.hoverEffectColumnBlock {
+    display: block !important;
+}
+
+.hoverEffect:hover .hoverEffectColumnShow {
+    display: block !important;
+}
+
+.hoverEffect:hover .hoverEffectColumnBlock {
+    display: none !important;
+}
+
+.shareList {
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.shareList:hover {
+    background: var(--hover-color);
+    color: var(--text-color);
+}
+
+.borderStyle {
+    border: 1px solid var(--border-color);
+}
+
+.inputGroupStyle {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.inputGroupStyle::placeholder {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.inputGroupStyle:focus {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: none !important;
+}
+
+.rowWithDrag {
+    display: flex;
+    align-items: center;
+}
+
+.dragHandle {
+    opacity: 0;
+    cursor: grab;
+    margin-right: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.rowWithDrag:hover .dragHandle {
+    opacity: 1;
+}
